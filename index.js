@@ -71,6 +71,10 @@ app.get('/', (req, res) => {
     res.send('Running Genius Server')
 })
 
+app.get('/hello', async (req, res) => {
+    res.send('Hello, World')
+})
+
 app.listen(port, () => {
     console.log('Running Genius Server on Port', port);
 })
